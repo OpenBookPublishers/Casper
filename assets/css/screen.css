@@ -32,7 +32,7 @@ production stylesheet in assets/built/screen.css
 @import "global.css";
 
 body {
-    background: #f2faf9;
+    background: #f4f8fb;
 }
 
 .img {
@@ -112,10 +112,9 @@ body {
     position: relative;
     padding-top: 12px;
     padding-bottom: 12px;
-    color: #000;
-    background: color(white l(-0%)) no-repeat center center;
+    color: #fff;
+    background: color(var(--darkgrey) l(-5%)) no-repeat center center;
     background-size: cover;
-    box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.2);
 }
 
 .site-header:before {
@@ -127,6 +126,7 @@ body {
     left: 0;
     z-index: 10;
     display: block;
+    background: rgba(0,0,0,0.18);
 }
 
 .site-header:after {
@@ -139,6 +139,7 @@ body {
     z-index: 10;
     display: block;
     height: 80px;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0));
 }
 
 .site-header.no-image:before,
@@ -230,7 +231,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: block;
     margin-right: 24px;
     padding: 11px 0;
-    color: #000;
+    color: #fff;
     font-size: 1.7rem;
     line-height: 1em;
     font-weight: bold;
@@ -265,7 +266,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: block;
     margin: 0;
     padding: 10px 12px;
-    color: #000;
+    color: #fff;
     opacity: 0.8;
 }
 
@@ -297,7 +298,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     align-items: center;
     margin: 0;
     padding: 10px;
-    color: #000;
+    color: #fff;
     opacity: 0.8;
 }
 
@@ -307,7 +308,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .social-link svg {
     height: 1.8rem;
-    fill: #000;
+    fill: #fff;
 }
 
 .social-link-fb svg {
@@ -330,7 +331,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: block;
     padding: 4px 10px;
     border: #fff 1px solid;
-    color: #000;
+    color: #fff;
     font-size: 1.2rem;
     line-height: 1em;
     border-radius: 10px;
@@ -353,7 +354,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .rss-button svg {
     margin-bottom: 1px;
     height: 2.1rem;
-    fill: #000;
+    fill: #fff;
 }
 
 @media (max-width: 700px) {
@@ -695,7 +696,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 }
 
 .post-full-meta-date {
-    color: var(--green);
+    color: var(--blue);
 }
 
 .post-full-title {
@@ -743,7 +744,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     padding: 70px 100px 0;
     min-height: 230px;
     font-family: Georgia, serif;
-    font-size: 2rem;
+    font-size: 2.2rem;
     line-height: 1.6em;
     background: #fff;
 }
@@ -824,11 +825,11 @@ make sure this only happens on large viewports / desktop-ish devices.
 .post-full-content a {
     color: #000;
     word-break: break-word;
-    box-shadow: var(--green) 0 -1px 0 inset;
+    box-shadow: var(--blue) 0 -1px 0 inset;
 }
 
 .post-full-content a:hover {
-    color: var(--green);
+    color: var(--blue);
     text-decoration: none;
 }
 
@@ -899,7 +900,7 @@ Usage (In Ghost editor):
 .post-full-content blockquote {
     margin: 0 0 1.5em;
     padding: 0 1.5em;
-    border-left: var(--green) 3px solid;
+    border-left: #3eb0ef 3px solid;
 }
 
 .post-full-content blockquote p {
@@ -1032,7 +1033,7 @@ Usage (In Ghost editor):
     margin: 0.5em 0;
     padding: 1em 0 1.5em;
     border: 0;
-    color: var(--green);
+    color: var(--blue);
     font-family: Georgia,serif;
     font-size: 3.2rem;
     line-height: 1.35em;
@@ -1075,7 +1076,7 @@ Usage (In Ghost editor):
 }
 
 .footnote-backref {
-    color: var(--green) !important;
+    color: var(--blue) !important;
     font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none !important;
@@ -1336,8 +1337,8 @@ Usage (In Ghost editor):
 }
 
 .author-card-button:hover {
-    border-color: var(--green);
-    color: var(--green);
+    border-color: var(--blue);
+    color: var(--blue);
     text-decoration: none;
 }
 
@@ -1749,7 +1750,6 @@ Usage (In Ghost editor):
 }
 
 .floating-header-share-fb {
-    margin-right: 33px;
     background: #005e99;
 }
 
@@ -1761,7 +1761,7 @@ Usage (In Ghost editor):
     width: 100%;
     height: 2px;
     border: none;
-    color: var(--green);
+    color: var(--blue);
     background: transparent;
 
     appearance: none;
@@ -1772,11 +1772,11 @@ Usage (In Ghost editor):
 }
 
 .progress::-webkit-progress-value {
-    background-color: var(--green);
+    background-color: var(--blue);
 }
 
 .progress::-moz-progress-bar {
-    background-color: var(--green);
+    background-color: var(--blue);
 }
 
 .progress-container {
@@ -1793,7 +1793,7 @@ Usage (In Ghost editor):
     display: block;
     width: 50%;
     height: inherit;
-    background-color: var(--green);
+    background-color: var(--blue);
 }
 
 @media (max-width: 900px) {
@@ -1840,6 +1840,11 @@ Usage (In Ghost editor):
     flex-direction: column;
     align-items: center;
     max-width: 920px;
+}
+
+.post-template .post-content > p:first-child {
+    font-size: 1.25em;
+    line-height: 1.5em;
 }
 
 .post-full-content .kg-image {
